@@ -1,0 +1,27 @@
+/* Block1.css */
+.background {
+    background-image: url('./images/bb.jpg');
+    background-size: cover;
+    background-position: top center;
+    height: 700px; /* Adjust height as needed */
+    width: 100%; /* Full width */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+  }
+  
+  .stylish-text {
+    font-size: 2rem; /* Large font size */
+    font-weight: bold; /* Bold text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow effect */
+    padding: 20px; /* Padding around the text */
+   
+    
+    color: white; /* Text color */
+    text-align: center; /* Center text alignment */
+    max-width: 80%; /* Maximum width for responsive design */
+    margin: auto; /* Center the text block */
+  }
+  
