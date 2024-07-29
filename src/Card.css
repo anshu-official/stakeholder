@@ -1,155 +1,143 @@
 .card {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden; /* Hide overflowing content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    width: 100%; /* Full width for responsiveness */
-    max-width: 1200px; /* Increased maximum width for larger screens */
-    margin: 20px auto; /* Center card horizontally */
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
   }
   
   .card-heading {
-    text-align: center; /* Center align text */
-    padding: 15px; /* Increased padding around the heading */
-    background: linear-gradient(90deg, #11ba39, #04381d); /* Gradient background */
-    color: #fff; /* Text color */
-    font-size: 2rem; /* Reduced font size for the heading */
-    font-weight: bold; /* Make the heading bold */
-    border-bottom: 4px solid #186520; /* Bottom border */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow effect for heading */
-    text-transform: uppercase; /* Uppercase text */
-    letter-spacing: 1px; /* Spacing between letters */
-    font-family: 'Roboto', sans-serif; /* Stylish Google Font */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for a 3D effect */
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(90deg, #11ba39, #04381d);
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 4px solid #186520;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
   
   .card-content {
-    display: flex; /* Flex container for content */
-    flex-direction: row; /* Arrange children side by side */
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   
   .card-left,
   .card-right {
-    flex: 1; /* Flex items will grow equally */
-    padding: 15px; /* Padding around the content */
+    flex: 1;
+    padding: 15px;
   }
   
   .card-left {
-    background-color: #f8f8f8; /* Background color for the image section */
+    background-color: #f8f8f8;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center align children horizontally */
+    flex-direction: column;
+    align-items: center;
   }
   
   .profile-image {
-    width: 100%; /* Full width of the left side */
-    height: auto; /* Adjust height automatically */
-    max-height: 250px; /* Reduced maximum height */
-    object-fit: cover; /* Cover the area without distortion */
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
   }
   
   .choose-button {
-    margin-top: 10px; /* Space above the button */
-    padding: 10px 20px; /* Adjusted padding around the button text */
-    font-size: 1rem; /* Smaller font size for the button text */
-    color: #fff; /* Button text color */
-    background-color: #ba1d22; /* Button background color */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners for the button */
-    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ba1d22;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
   }
   
   .choose-button:hover {
-    background-color: #0056b3; /* Darker background color on hover */
+    background-color: #0056b3;
   }
   
   .card-right {
-    background-color: #ffffff; /* Background color for the right side */
+    background-color: #ffffff;
   }
   
   .card-name {
-    font-size: 2rem; /* Reduced font size for the name */
-    font-weight: bold; /* Bold name */
-    margin: 0; /* Remove default margin */
-    text-align: center; /* Center align text */
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
   }
   
   .card-contact {
-    font-size: 0.9rem; /* Smaller font size for contact information */
-    color: #333; /* Dark color for better readability */
-    margin: 10px 0; /* Margin around contact information */
-    text-align: center; /* Center align text */
+    font-size: 0.9rem;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
   }
   
   .card-bio {
-    margin: 10px 0; /* Reduced margin for spacing */
-    font-size: 1rem; /* Smaller font size for the bio */
-    color: #555; /* Bio text color */
-    text-align: left; /* Center align text */
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+    text-align: left;
   }
   
   .card-projects {
-    font-size: 0.9rem; /* Smaller font size for projects information */
-    color: #444; /* Darker color for readability */
-    margin-top: 10px; /* Space above the projects information */
-    text-align: center; /* Center align text */
+    font-size: 0.9rem;
+    color: #444;
+    margin-top: 10px;
+    text-align: center;
   }
   
+  @media (max-width: 1024px) {
+    .card {
+      max-width: 45%;
+    }
+  }
   
-  /* Responsive styles */
   @media (max-width: 768px) {
     .card {
-      width: 90%; /* Adjust card width for smaller screens */
+      max-width: 90%;
     }
-    
+  
     .card-content {
-      flex-direction: column; /* Stack children vertically on smaller screens */
+      flex-direction: column;
     }
   
     .card-left,
     .card-right {
-      flex: none; /* Disable flex sizing */
-      width: 100%; /* Full width for each section */
+      flex: none;
+      width: 100%;
     }
   
     .profile-image {
-      max-height: 200px; /* Reduce maximum height for smaller screens */
-    }
-  }
-
-/* Media queries for responsiveness */
-@media (max-width: 1024px) {
-    .card {
-      max-width: 45%; /* Adjusted max width for tablets */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .card {
-      max-width: 90%; /* Full width on small screens */
+      max-height: 200px;
     }
   }
   
   @media (max-width: 480px) {
     .card {
-      max-width: 100%; /* Full width on very small screens */
+      max-width: 100%;
     }
   
     .card-name {
-      font-size: 1.2rem; /* Adjusted font size for smaller screens */
+      font-size: 1.2rem;
     }
   
     .card-bio {
-      font-size: 0.8rem; /* Adjusted font size for smaller screens */
+      font-size: 0.8rem;
     }
   
     .choose-button {
-      font-size: 0.9rem; /* Adjusted font size for the button */
+      font-size: 0.9rem;
     }
-    .card-bio {
-        font-size: 0.8rem; /* Adjusted font size for smaller screens */
-      }
   }
   

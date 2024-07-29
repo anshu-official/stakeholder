@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './cards'; // Ensure the path is correct
+import Card from './cards'; 
 import './App.css';
 import Block1 from './Block1';
 import volunteer from './images/voluteer.png'; 
