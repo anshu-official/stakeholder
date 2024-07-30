@@ -6,6 +6,7 @@ import volunteer from './images/voluteer.png';
 import anc from './images/anc.png';
 import abc from './images/abc.jpg';
 import ubn from './images/ubn.png'
+import Icons from './Icons';
 
 
 
@@ -81,6 +82,7 @@ const App = () => {
   return (
     <div className="app">
       <Block1 />
+      <Icons/>
       
       <Card
         heading="Volunteers"
